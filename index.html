@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <main class="col-lg-8">
+      <h1>Witamy w hurtowni telefonów!</h1>
+      <p>Poniżej masz możliwość zakupu wyłącznie 1 modelu telefonu(jeśli chciałbyć kupić więcej, uzykasz taką możliwość dopiero po opłaceniu zamówienia)</p>
+      <div class="total-ammount">
+        <label for="total-ammount" class="question">Ile możesz wydać?</label>
+        <input type="text" id="total-ammount">
+      </div>
+      <div class="phones">
+        <label class="question">Jaki model Cię interesuje?</label>
+        <input type="checkbox" class="a5" data-phone="get" value="Samsung Galaxy A5"> Samsung Galaxy A5 <br>
+        <input type="checkbox" class="z3" data-phone="get" value="Sony XPeria Z3"> Sony XPeria Z3 <br>
+        <input type="checkbox" class="redmi2" data-phone="get" value="Xiaomi Redmi Note 2"> Xiaomi Redmi Note 2 <br>
+        <input type="checkbox" class="s6" data-phone="get" value="iPhone S6"> iPhone S6
+      </div>
+      <div class="quantity">
+        <label class="question">Ilość sztuk</label>
+      </div>
+      <div class="accessories">
+        <label class="question">Jakie akcesoria chcesz dokupić?</label>
+        <input type="checkbox" id="etui" value="Pokrowiec"> Pokrowiec <br>
+        <input type="checkbox" id="charger" value="Ładowarka"> Ładowarka <br>
+        <input type="checkbox" id="scriber" value="Rysik"> Rysik
+      </div>
+      <button type="button" id="btn1" class="btn btn-success">A co tam... stać mnie!</button>
+      <button type="button" id="btn2" class="btn btn-success">Te są najfajniejsze</button>
+      <button type="button" id="btn3" class="btn btn-success">Myślę, że wystarczy</button>
+      <button type="button" id="btn4" class="btn btn-success">Myślę, że wystarczy</button>
+    </main>
+    <aside class="col-lg-4 info-container">
+      <div class="info">
+        <ul>
+          <li class="balance">Account Balance: &nbsp;</li>
+          <li class="max">Max Transaction Price: &nbsp;</li>
+          <li class="tax">TAX: &nbsp;</li>
+        </ul>
+          <button class="btn btn-warning calc-btn" type="button">Calculate</button>
+      </div>
+    </aside>
+  </div>
+</div>
+
+
+
+<script src="scripts.js"></script>
+</body>
+</html>
